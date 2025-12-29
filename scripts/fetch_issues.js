@@ -1,5 +1,5 @@
 // scripts/fetch_issues.js
-import https from "https";
+const https = require("https");
 
 const options = {
   hostname: "api.github.com",
@@ -15,4 +15,6 @@ https.get(options, (res) => {
   res.on("end", () => {
     console.log(data);
   });
+}).on("error", (err) => {
+  console.error("Request failed:", err);
 });
