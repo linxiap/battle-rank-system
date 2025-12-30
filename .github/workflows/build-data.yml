@@ -3,6 +3,10 @@ name: Build Data
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+  issues: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,4 +17,7 @@ jobs:
         with:
           node-version: 18
 
-      - run: node scripts/fetch_issues.js
+      - name: Run fetch issues
+        run: node scripts/fetch_issues.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
