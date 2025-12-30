@@ -33,7 +33,20 @@ function fetchIssues() {
         res.on("data", (chunk) => (data += chunk));
         res.on("end", () => {
           try {
-            resolve(JSON.parse(data));
+            const result = JSON.parse(data);
+
+            if (!Array.isArray(result)) {
+              console.error("❌ GitHub API response is not an array:");
+              console.error(result);
+              reject(
+                new Error(
+                  result.message || "GitHub Issues API returned invalid data"
+                )
+              );
+              return;
+            }
+
+            resolve(result);
           } catch (e) {
             reject(e);
           }
@@ -42,6 +55,7 @@ function fetchIssues() {
       .on("error", reject);
   });
 }
+
 
 function emptyStats() {
   return { total: 0, wins: 0, losses: 0, winRate: 0 };
