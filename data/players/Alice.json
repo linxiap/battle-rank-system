@@ -1,0 +1,37 @@
+{
+  "player": "Alice",
+  "summary": {
+    "total": 1,
+    "wins": 1,
+    "losses": 0,
+    "winRate": 1
+  },
+  "byRace": {
+    "Human": {
+      "total": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1
+    }
+  },
+  "byRegion": {
+    "CN": {
+      "total": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1
+    }
+  },
+  "matches": [
+    {
+      "id": 2,
+      "opponent": "Bob",
+      "playerRace": "Human",
+      "opponentRace": "Orc",
+      "region": "CN",
+      "result": "win",
+      "timestamp": "2025-01-01T12:00:00Z",
+      "season": "S1"
+    }
+  ]
+}

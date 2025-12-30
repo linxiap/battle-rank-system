@@ -1,0 +1,39 @@
+{
+  "region": "CN",
+  "summary": {
+    "total": 2,
+    "wins": 1,
+    "losses": 1,
+    "winRate": 0.5
+  },
+  "players": [
+    {
+      "player": "Alice",
+      "total": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1
+    },
+    {
+      "player": "Bob",
+      "total": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": 0
+    }
+  ],
+  "races": {
+    "Human": {
+      "total": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1
+    },
+    "Orc": {
+      "total": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": 0
+    }
+  }
+}

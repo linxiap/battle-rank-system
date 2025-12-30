@@ -1,0 +1,17 @@
+{
+  "race": "Human",
+  "summary": {
+    "total": 1,
+    "wins": 1,
+    "losses": 0,
+    "winRate": 1
+  },
+  "byRegion": {
+    "CN": {
+      "total": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1
+    }
+  }
+}
